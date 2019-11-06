@@ -1,24 +1,50 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": 2,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+"employees": [
+{
+  "employeeName": "Dan Brown",
+  "id": 1,
+  "departmentId": 1,
+  "computerId": 2
+},
+
+{
+  "employeeName": "Annie Hall",
+  "id": 2,
+  "departmentId": 2,
+  "computerId": 1
+},
+
+{
+  "employeeName": "Lydia Deetz",
+  "id": 3,
+  "departmentId": 1,
+  "computerId": 1
+}
+
+],
+"departments": [
+{
+  "department": "accounting",
+  "id": 1
+},
+{
+  "department": "finance",
+  "id": 2
+},
+{
+  "department": "HR",
+  "id": 3
+}
+
+],
+"computers": [
+{
+  "computer": "Mac",
+  "id": 1
+},
+{
+  "computer": "PC",
+  "id": 2
+}
+]
 }
