@@ -1,5 +1,11 @@
-const message = "Your Webpack application is set up and ready to go. Please start writing code."
+import dom from "./domRenderer.js"
+import API from "./data.js"
+console.log("Let's do this.")
 
-document.querySelector("#container").innerHTML = `<h1>${message}</h1>`
+API.getJournalEntries()
+    .then(parsedEntries => {
+        parsedEntries.forEach(entry=>{
+            dom.domRenderer(entry)
+    })
+})
 
-console.log(message)
